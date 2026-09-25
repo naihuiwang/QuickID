@@ -10,9 +10,9 @@ macOS: Download the source code and build QuickID.app using the macOS instructio
 
 ## Using the source
 
-Install Python 3 with Tkinter, then run `python quickid.py`. Select a reference `.xlsx` file, a folder of `.txt` or `.tab` peak lists, and a CSV output path; then click **Run**. The twelve built-in marker names default to `P1`, `A`, `A'`, `B`, `C`, `P2`, `D`, `E`, `F`, `F'`, `G`, `G'`. You can edit all twelve names or leave all twelve blank and use only the optional markers. **Clear all** clears the built-in marker names and tolerances.
+Select a reference `.xlsx` file (demo_reference_database), a folder of `.txt` or `.tab` peak lists (demo_peaklists), and a CSV output path for results; then click **Run**. The twelve built-in marker names default to `P1`, `A`, `A'`, `B`, `C`, `P2`, `D`, `E`, `F`, `F'`, `G`, `G'`. You can edit all twelve names or leave all twelve blank and use only the optional markers. **Clear all** clears the built-in marker names and tolerances.
 
-The default lower tolerance is −0.3 *m/z* for every built-in marker position. The default upper tolerance is +1.3 *m/z* for the positions initially named **P1, A, A′, E, G, G′**, and +0.3 *m/z* for the other six positions. Renaming a marker does not change its tolerances. Values are entered to one decimal place.
+The default lower tolerance is −0.3 *m/z* for every built-in marker position. The default upper tolerance is +1.3 *m/z* for markers initially named **P1, A, A′, E, G, G′**, and +0.3 *m/z* for the other six positions. Renaming a marker does not change its tolerances. Values are entered to one decimal place.
 
 Below the twelve built-in markers are eight optional markers in two rows. Each requires a name and both tolerance values; its name must appear as a unique column heading in the reference workbook (case-insensitive), and must not duplicate an active built-in name. Missing or incomplete optional markers are skipped. 
 
@@ -21,6 +21,8 @@ The output CSV puts **Sample name in the first column** and **QuickID marker cou
 The application uses Python's standard library at runtime. **Users of packaged builds do not need Python or .NET installed.** To package, install Python 3 and PyInstaller on the build computer:
 
 ### Windows
+
+Python 3 and Tkinter are installed.
 
 ```powershell
 py -m pip install pyinstaller
@@ -31,7 +33,7 @@ Distribute `dist/QuickID.exe` (built on Windows). You can build from Visual Stud
 
 ### macOS
 
-On a Mac with Python 3 and Tkinter installed, open Terminal in the folder containing quickid.py and app.ini.example, then run:
+Python 3 and Tkinter are installed.
 
 ```sh
 python3 -m pip install pyinstaller
