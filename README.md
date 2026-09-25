@@ -2,6 +2,11 @@
 
 QuickID matches MALDI-TOF ZooMS peak lists against a collagen marker reference spreadsheet. QuickID was conceived by Naihui Wang.
 
+## Download and run
+
+Windows: Download QuickID.exe from this repository's Releases page and double-click it. The EXE is provided separately from the source code; no Python or .NET installation is required to run it.
+macOS: Download the source code and build QuickID.app using the macOS instructions below. There is currently no prebuilt Mac app in the release. The source also includes a GitHub Actions workflow that can build Apple Silicon and Intel versions.
+
 ## Using the source
 
 Install Python 3 with Tkinter, then run `python quickid.py`. Select a reference `.xlsx` file, a folder of `.txt` or `.tab` peak lists, and a CSV output path; then click **Run**. The twelve built-in marker names default to `P1`, `A`, `A'`, `B`, `C`, `P2`, `D`, `E`, `F`, `F'`, `G`, `G'`. You can edit all twelve names or leave all twelve blank and use only the optional markers. **Clear all** clears the built-in marker names and tolerances.
