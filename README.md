@@ -5,7 +5,8 @@ QuickID matches MALDI-TOF ZooMS peak lists against a collagen marker reference s
 ## Download and run
 
 Windows: Download QuickID.exe from this repository and double-click it. The EXE is provided separately from the source code; no Python or .NET installation is required to run it.
-macOS: Download the source code and build QuickID.app using the macOS instructions below. There is currently no prebuilt Mac app in the release. The source also includes a GitHub Actions workflow that can build Apple Silicon and Intel versions.
+
+macOS: Download the source code and build QuickID.app using the macOS instructions below. There is currently no prebuilt Mac app.
 
 ## Using the source
 
@@ -29,6 +30,8 @@ py -m PyInstaller --noconfirm --clean --onefile --windowed --name QuickID --add-
 Distribute `dist/QuickID.exe` (built on Windows). You can build from Visual Studio's terminal; Visual Studio alone does not include Python or PyInstaller. If your computer recognizes `python` rather than `py`, substitute `python` in both commands.
 
 ### macOS
+
+On a Mac with Python 3 and Tkinter installed, open Terminal in the folder containing quickid.py and app.ini.example, then run:
 
 ```sh
 python3 -m pip install pyinstaller
