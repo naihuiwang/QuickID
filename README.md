@@ -4,7 +4,7 @@ QuickID matches MALDI-TOF ZooMS peak lists against a collagen marker reference s
 
 ## Download and run
 
-Windows: Download QuickID.exe from this repository's Releases page and double-click it. The EXE is provided separately from the source code; no Python or .NET installation is required to run it.
+Windows: Download QuickID.exe from this repository and double-click it. The EXE is provided separately from the source code; no Python or .NET installation is required to run it.
 macOS: Download the source code and build QuickID.app using the macOS instructions below. There is currently no prebuilt Mac app in the release. The source also includes a GitHub Actions workflow that can build Apple Silicon and Intel versions.
 
 ## Using the source
